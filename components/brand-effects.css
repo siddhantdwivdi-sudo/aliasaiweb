@@ -1,0 +1,131 @@
+/*
+  brand-effects.css
+  ------------------
+  Ported from aliasops and adapted for Alias AI's white pages.
+  Light (default): navy text on white, lime used only as a fill/highlight.
+  Dark bands: add the `dark-band` class to the section (or any ancestor) to
+  get the original lime-on-dark versions.
+*/
+
+/* 1. Ambient glow: soft blurred lime light behind a container. */
+.ambient-glow {
+  position: relative;
+  isolation: isolate;
+}
+
+.ambient-glow::before {
+  content: "";
+  position: absolute;
+  inset: -25%;
+  background: radial-gradient(circle at 50% 35%, rgba(183, 255, 0, 0.16), transparent 60%);
+  filter: blur(70px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ambient-glow-navy::before {
+  background: radial-gradient(circle at 50% 35%, rgba(29, 50, 77, 0.55), transparent 60%);
+}
+
+/* 2. Emphasis: bold Raleway inside a headline. */
+.emph {
+  font-family: var(--font-raleway), sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* On white: navy bold with a lime highlighter swash behind the word. */
+.emph-accent {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  font-family: var(--font-raleway), sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #1d324d;
+}
+
+.emph-accent::after {
+  content: "";
+  position: absolute;
+  left: -0.06em;
+  right: -0.06em;
+  bottom: 0.06em;
+  height: 0.42em;
+  background: #b7ff00;
+  border-radius: 0.2em 0.35em 0.25em 0.4em;
+  transform: rotate(-1.2deg);
+  z-index: -1;
+}
+
+/* Inside a font-hero heading the emphasis word follows the heading font. */
+.font-hero .emph-accent {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* On dark bands: lime text, no swash. */
+.dark-band .emph-accent {
+  color: #b7ff00;
+}
+
+.dark-band .emph-accent::after {
+  display: none;
+}
+
+/* 3. Eyebrow: small letter-spaced label. Navy on white, white on dark. */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(29, 50, 77, 0.7);
+  font-family: var(--font-inter), sans-serif;
+}
+
+.dark-band .eyebrow {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* 4. Pulse dot: small "live" indicator. */
+.pulse-dot {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b7ff00;
+  box-shadow: 0 0 0 0 rgba(183, 255, 0, 0.6);
+  animation: pulseDot 2s ease-out infinite;
+}
+
+/* A lime dot alone is nearly invisible on white, so it gets a thin navy ring there. */
+.eyebrow .pulse-dot {
+  outline: 1px solid rgba(29, 50, 77, 0.35);
+  outline-offset: 0;
+}
+
+.dark-band .eyebrow .pulse-dot {
+  outline: none;
+}
+
+@keyframes pulseDot {
+  0% {
+    box-shadow: 0 0 0 0 rgba(183, 255, 0, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(183, 255, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(183, 255, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-dot {
+    animation: none;
+  }
+}
