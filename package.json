@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:drop": "next build && node scripts/rename-next-dir.mjs",
     "start": "next start",
     "lint": "eslint"
   },
