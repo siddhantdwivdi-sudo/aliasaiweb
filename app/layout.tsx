@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Raleway } from "next/font/google";
 import ContactModal from "@/components/ContactModal";
 import { ContactModalProvider } from "@/components/ContactModalContext";
+import CustomCursor from "@/components/CustomCursor";
 import Footer from "@/components/Footer";
 import SiteNav from "@/components/SiteNav";
 import SmoothScroll from "@/components/SmoothScroll";
@@ -36,6 +37,7 @@ export default function RootLayout({
       className={`${inter.variable} ${raleway.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
+        <CustomCursor />
         <SmoothScroll>
           <ContactModalProvider>
             <SiteNav />
