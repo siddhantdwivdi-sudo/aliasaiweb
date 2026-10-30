@@ -1,4 +1,4 @@
-export const SITE_URL = "https://aliasai.com";
+export const SITE_URL = "https://aliasai.co";
 export const SITE_NAME = "Alias AI";
 export const SITE_TAGLINE = "Build a Pipeline That’s Predictable, Qualified, Consistent";
 export const SITE_DESCRIPTION =

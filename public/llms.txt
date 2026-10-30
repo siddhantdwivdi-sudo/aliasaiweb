@@ -4,15 +4,15 @@
 
 ## Services
 
-- [LinkedIn Personal Branding](https://aliasai.com/services/linkedin): Positioning, content, targeted engagement, intent-signal tracking and account management, with inbound and outbound pathways.
-- [SEO & GEO](https://aliasai.com/services/seo-geo): SEO and GEO optimized blogs, website content and newsletters built to rank on Google and be cited by ChatGPT, Gemini, Claude, Perplexity and other AI search engines.
-- [Email Marketing & Outbound](https://aliasai.com/services/email-outbound): Email marketing and cold email outreach that reaches decision-makers and turns inboxes into booked meetings.
+- [LinkedIn Personal Branding](https://aliasai.co/services/linkedin): Positioning, content, targeted engagement, intent-signal tracking and account management, with inbound and outbound pathways.
+- [SEO & GEO](https://aliasai.co/services/seo-geo): SEO and GEO optimized blogs, website content and newsletters built to rank on Google and be cited by ChatGPT, Gemini, Claude, Perplexity and other AI search engines.
+- [Email Marketing & Outbound](https://aliasai.co/services/email-outbound): Email marketing and cold email outreach that reaches decision-makers and turns inboxes into booked meetings.
 
 ## Proof
 
-- [Case studies](https://aliasai.com/case-studies): How Alias AI builds predictable B2B pipelines through outbound, LinkedIn, SEO & GEO and newsletters.
+- [Case studies](https://aliasai.co/case-studies): How Alias AI builds predictable B2B pipelines through outbound, LinkedIn, SEO & GEO and newsletters.
 
 ## Optional
 
-- [Home and FAQ](https://aliasai.com/): Who Alias AI is for, how the audit-first process works, and answers to common questions.
-- [Sitemap](https://aliasai.com/sitemap.xml)
+- [Home and FAQ](https://aliasai.co/): Who Alias AI is for, how the audit-first process works, and answers to common questions.
+- [Sitemap](https://aliasai.co/sitemap.xml)
