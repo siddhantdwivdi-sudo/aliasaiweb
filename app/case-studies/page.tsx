@@ -3,11 +3,15 @@ import Link from "next/link";
 import FinalCTA from "@/components/FinalCTA";
 import Reveal, { RevealGroup, RevealItem } from "@/components/Reveal";
 import { caseStudies } from "@/lib/caseStudies";
+import { OG_IMAGE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Case Studies | Alias AI",
   description:
     "See how Alias AI builds predictable B2B pipelines through outbound, LinkedIn, SEO and GEO, and newsletters.",
+  alternates: { canonical: "/case-studies" },
+  openGraph: { type: "website", url: "/case-studies", title: "Case Studies | Alias AI", images: [OG_IMAGE] },
+  twitter: { card: "summary_large_image", images: [OG_IMAGE] },
 };
 
 export default function CaseStudiesPage() {

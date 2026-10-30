@@ -14,13 +14,15 @@ export default function Services() {
       </SectionHeading>
 
       <RevealGroup className="mx-auto grid max-w-[1100px] grid-cols-1 gap-4 md:grid-cols-3 md:gap-7">
-        {serviceCards.map((card) => (
+        {serviceCards.map((card, i) => (
           <RevealItem key={card.href + card.title[0]}>
             <Link
               href={card.href}
               className="group relative block h-[280px] text-inherit no-underline [perspective:1200px] min-[391px]:h-[300px] md:h-[315px]"
             >
-              <div className="absolute inset-0 transition-transform duration-[600ms] ease-[cubic-bezier(0.4,0.2,0.2,1)] [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus-visible:[transform:rotateY(180deg)]">
+              <div
+                style={{ animationDelay: `${i * 3}s` }}
+                className="absolute inset-0 max-md:animate-card-flip max-md:motion-reduce:animate-none transition-transform duration-[600ms] ease-[cubic-bezier(0.4,0.2,0.2,1)] [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus-visible:[transform:rotateY(180deg)]">
                 <div className="absolute inset-0 flex items-center justify-center rounded-2xl bg-ink shadow-[0_6px_18px_rgba(0,0,0,0.10)] [backface-visibility:hidden]">
                   <div className="px-4 text-center font-hero text-[22px] font-bold text-white md:text-2xl">
                     {card.title.map((line, n) => (

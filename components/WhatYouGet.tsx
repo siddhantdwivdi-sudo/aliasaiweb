@@ -133,10 +133,9 @@ function FlowCard({
   );
 }
 
-function Connector({ index, vertical }: { index: number; vertical: boolean }) {
+function Connector({ index }: { index: number }) {
   // Starts right after the card before it finishes.
   const delay = (index * 2 + 1) * SEGMENT;
-  const length = vertical ? 48 : 72;
 
   return (
     <div
@@ -144,18 +143,8 @@ function Connector({ index, vertical }: { index: number; vertical: boolean }) {
       className="relative h-12 w-0.5 shrink-0 self-center bg-lime/40 shadow-[0_0_10px_rgba(183,255,0,0.5)] min-[900px]:h-0.5 min-[900px]:w-[72px]"
     >
       <span
-        className="absolute size-2 rounded-full bg-lime opacity-0 shadow-[0_0_8px_2px_#b7ff00,0_0_18px_6px_rgba(183,255,0,0.6)] motion-reduce:hidden"
-        style={
-          {
-            left: vertical ? "50%" : 0,
-            top: vertical ? 0 : "50%",
-            marginLeft: -4,
-            marginTop: -4,
-            "--dx": vertical ? "0px" : `${length}px`,
-            "--dy": vertical ? `${length}px` : "0px",
-            animation: `connDot ${CYCLE}s linear ${delay}s infinite`,
-          } as React.CSSProperties
-        }
+        className="conn-dot absolute left-1/2 top-0 -ml-1 -mt-1 size-2 rounded-full bg-lime opacity-0 shadow-[0_0_8px_2px_#b7ff00,0_0_18px_6px_rgba(183,255,0,0.6)] motion-reduce:hidden min-[900px]:left-0 min-[900px]:top-1/2"
+        style={{ "--conn-delay": `${delay}s` } as React.CSSProperties}
       />
     </div>
   );
@@ -180,7 +169,7 @@ export default function WhatYouGet() {
             {outcomes.map((item, i) => (
               <Fragment key={item.title}>
                 <FlowCard index={i} title={item.title} body={item.body} vertical={vertical} />
-                {i < outcomes.length - 1 && <Connector index={i} vertical={vertical} />}
+                {i < outcomes.length - 1 && <Connector index={i} />}
               </Fragment>
             ))}
           </div>

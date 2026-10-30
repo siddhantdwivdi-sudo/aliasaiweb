@@ -34,7 +34,7 @@ export default function Hero() {
                   <span
                     key={i}
                     aria-hidden={i === rotatingWords.length - 1 || undefined}
-                    className="flex h-[1.3em] shrink-0 items-center justify-start md:justify-center"
+                    className="flex h-[1.3em] shrink-0 items-center justify-center"
                   >
                     <span className="emph-accent">{word}</span>
                   </span>

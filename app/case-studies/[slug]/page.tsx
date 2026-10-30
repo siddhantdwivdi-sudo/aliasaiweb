@@ -4,7 +4,10 @@ import { notFound } from "next/navigation";
 import FinalCTA from "@/components/FinalCTA";
 import Reveal, { RevealGroup, RevealItem } from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
+import JsonLd from "@/components/JsonLd";
 import { caseStudies, getCaseStudy } from "@/lib/caseStudies";
+import { caseStudyJsonLd } from "@/lib/schema";
+import { OG_IMAGE } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -24,6 +27,15 @@ export async function generateMetadata({
   return {
     title: `${study.summary} | Alias AI`,
     description: study.about,
+    alternates: { canonical: `/case-studies/${study.slug}` },
+    openGraph: {
+      type: "article",
+      url: `/case-studies/${study.slug}`,
+      title: study.summary,
+      description: study.about,
+      images: [OG_IMAGE],
+    },
+    twitter: { card: "summary_large_image", title: study.summary, description: study.about, images: [OG_IMAGE] },
   };
 }
 
@@ -37,6 +49,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
   return (
     <>
+      <JsonLd data={caseStudyJsonLd(study)} />
       <section className="bg-white px-5 py-16 text-center md:px-12 md:py-[100px]">
         <Reveal className="mx-auto max-w-[960px]">
           <span className="eyebrow mb-5">{study.industry}</span>

@@ -1,0 +1,18 @@
+# Alias AI
+
+> Alias AI helps B2B teams build a predictable, qualified, consistent pipeline: targeted outbound, authority-building content and search, working together to start the right conversations. We serve B2B founders, consultants, agencies and service companies. We run LinkedIn personal branding, SEO & GEO (Google and AI-search visibility), and email marketing & outbound end to end, so the right buyers find you, trust you and book meetings.
+
+## Services
+
+- [LinkedIn Personal Branding](https://aliasai.com/services/linkedin): Positioning, content, targeted engagement, intent-signal tracking and account management, with inbound and outbound pathways.
+- [SEO & GEO](https://aliasai.com/services/seo-geo): SEO and GEO optimized blogs, website content and newsletters built to rank on Google and be cited by ChatGPT, Gemini, Claude, Perplexity and other AI search engines.
+- [Email Marketing & Outbound](https://aliasai.com/services/email-outbound): Email marketing and cold email outreach that reaches decision-makers and turns inboxes into booked meetings.
+
+## Proof
+
+- [Case studies](https://aliasai.com/case-studies): How Alias AI builds predictable B2B pipelines through outbound, LinkedIn, SEO & GEO and newsletters.
+
+## Optional
+
+- [Home and FAQ](https://aliasai.com/): Who Alias AI is for, how the audit-first process works, and answers to common questions.
+- [Sitemap](https://aliasai.com/sitemap.xml)
