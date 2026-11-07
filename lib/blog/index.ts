@@ -1,8 +1,10 @@
 import type { BlogBlock, BlogPost } from "./types";
 
-// PUBLISH-REGISTRY: the /blog skill adds one import + one array entry per new post.
-// Keep imports alphabetical by slug; newest-first ordering is handled by sortedPosts().
-const registry: BlogPost[] = [];
+// REGISTRY-IMPORTS (publish script inserts one import per post above this line)
+// Newest-first ordering is handled below.
+const registry: BlogPost[] = [
+  // REGISTRY-ENTRIES
+];
 
 export const posts: BlogPost[] = [...registry].sort((a, b) =>
   a.publishedAt < b.publishedAt ? 1 : -1,
