@@ -12,6 +12,10 @@
 
 - [Case studies](https://aliasai.co/case-studies): How Alias AI builds predictable B2B pipelines through outbound, LinkedIn, SEO & GEO and newsletters.
 
+## Blog
+
+- [What Is GTM for an AI Startup, and What Does It Include?](https://aliasai.co/blog/gtm-for-an-ai-startup): GTM for an AI startup is your plan to find, win and keep customers. See the 7 decisions it includes, with real examples from AI founders for each one.
+
 ## Optional
 
 - [Home and FAQ](https://aliasai.co/): Who Alias AI is for, how the audit-first process works, and answers to common questions.

@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Solutions", href: "/#services" },
   { label: "Process", href: "/#what-you-get" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const linkClass =

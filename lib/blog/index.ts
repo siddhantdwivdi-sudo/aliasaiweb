@@ -1,8 +1,10 @@
 import type { BlogBlock, BlogPost } from "./types";
 
+import { post as gtmForAnAiStartup } from "./posts/gtm-for-an-ai-startup";
 // REGISTRY-IMPORTS (publish script inserts one import per post above this line)
 // Newest-first ordering is handled below.
 const registry: BlogPost[] = [
+  gtmForAnAiStartup,
   // REGISTRY-ENTRIES
 ];
 

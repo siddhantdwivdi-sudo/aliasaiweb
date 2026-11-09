@@ -11,6 +11,7 @@ const homeLinks = [
   { label: "Solutions", href: "#services", dropdown: true },
   { label: "Process", href: "#what-you-get" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const serviceLinks = [
