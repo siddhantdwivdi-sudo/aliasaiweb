@@ -2,11 +2,13 @@ import type { BlogBlock, BlogPost } from "./types";
 
 import { post as gtmForAnAiStartup } from "./posts/gtm-for-an-ai-startup";
 import { post as isOpenRateStillARelevantColdEmailMetric } from "./posts/is-open-rate-still-a-relevant-cold-email-metric";
+import { post as whatToTrackInsteadOfOpenRateInColdEmail } from "./posts/what-to-track-instead-of-open-rate-in-cold-email";
 // REGISTRY-IMPORTS (publish script inserts one import per post above this line)
 // Newest-first ordering is handled below.
 const registry: BlogPost[] = [
   gtmForAnAiStartup,
   isOpenRateStillARelevantColdEmailMetric,
+  whatToTrackInsteadOfOpenRateInColdEmail,
   // REGISTRY-ENTRIES
 ];
 
