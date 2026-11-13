@@ -14,6 +14,7 @@
 
 ## Blog
 
+- [What Is GEO and How Is It Different From SEO?](https://aliasai.co/blog/what-is-geo-and-how-is-it-different-from-seo): GEO is the work of getting cited in AI answers. See how it differs from SEO in goal and measurement, what stays the same, and what Google says to ignore.
 - [What Should You Track Instead of Open Rate in Cold Email?](https://aliasai.co/blog/what-to-track-instead-of-open-rate-in-cold-email): Open rate is unreliable. These cold email metrics replace it: reply rate, meetings booked, bounces, spam complaints and opt-outs, and how to read each one.
 - [Is Open Rate Still a Relevant Cold Email Metric?](https://aliasai.co/blog/is-open-rate-still-a-relevant-cold-email-metric): Cold email open rate no longer shows who read your email. See how Apple, Gmail and Outlook break it, what it can still tell you, and how to test your own account.
 - [What Is GTM for an AI Startup, and What Does It Include?](https://aliasai.co/blog/gtm-for-an-ai-startup): GTM for an AI startup is your plan to find, win and keep customers. See the 7 decisions it includes, with real examples from AI founders for each one.
